@@ -1,3 +1,3 @@
-## robot-gladiators
+# robot-gladiators
 
-# Purpose: to create a game in javascript.
+## Purpose: to create a game in javascript.
