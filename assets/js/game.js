@@ -53,7 +53,15 @@ var fight = function(enemyNames) {
                 window.alert(playerName + " has chosen to skip the fight!");
             window.alert("You need to choose a valid option. Try again!");*/
 for(var i = 0; i < enemyNames.length; i++) {
-    var pickedEnemyName = enemyNames[i];
-    enemyHealth = 50;
-    fight(pickedEnemyName);
+    if (playerHealth > 0) {
+        window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ));
+        var pickedEnemyName = enemyNames[i];
+        enemyHealth = 50;
+        debugger;
+        fight(pickedEnemyName);
+    }
+    else { 
+        window.alert("You have lost your robot in battlw! Game Over!");
+        break;
+    }
 }
